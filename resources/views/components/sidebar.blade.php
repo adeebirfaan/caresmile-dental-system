@@ -4,7 +4,7 @@
         {{-- Logo / Header --}}
         <div class="sidebar-header text-center">
             <img src="{{ asset('CareSmile.png') }}" alt="CareSmile Logo" class="sidebar-logo">
-            <h6 class="sidebar-title">CareSmile</h6>
+            <h6 class="sidebar-title mb-1">CareSmile</h6>
             <span class="sidebar-role">{{ Auth::user()->role->label() }}</span>
         </div>
 
@@ -33,15 +33,15 @@
 
             {{-- Admin Only --}}
             @if(Auth::user()->isAdmin())
-            <li>
-                <a href="{{ route('admin.patients') }}" class="sidebar-link {{ request()->routeIs('admin.patients') ? 'active' : '' }}">
-                    <i class="fas fa-users"></i>
-                    <span>Patients</span>
-                </a>
-            </li>
+                <li>
+                    <a href="{{ route('admin.patients') }}" class="sidebar-link {{ request()->routeIs('admin.patients') ? 'active' : '' }}">
+                        <i class="fas fa-users"></i>
+                        <span>Patients</span>
+                    </a>
+                </li>
             @endif
 
-            {{-- Disabled --}}
+            {{-- Future Modules --}}
             <li>
                 <span class="sidebar-link disabled">
                     <i class="fas fa-calendar-check"></i>
