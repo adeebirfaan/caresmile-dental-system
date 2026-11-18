@@ -2,9 +2,13 @@
 
 A web system for a dental clinic, built with Laravel. It has a public website for the clinic and separate dashboards for each type of user.
 
-> Work in progress. Accounts, login and the role dashboards are in place. Clinic features such as appointments are still to come.
+> **This repo is my early solo draft.** The finished system was built as a group project for BCS3263 and lives at **[aininsofiya15/CareSmile_1A](https://github.com/aininsofiya15/CareSmile_1A)** ([live site](https://indah.ump.edu.my/BCS3263-1AG1/CareSmile_1A/public/)). It adds appointment booking, dentist schedules, patient management and services.
+>
+> My part of the group project:
+> - The doctor schedule module (migration, controller and views)
+> - Appointment duration logic, the schedule dashboard and schedule conflict detection
 
-## Features
+## What this draft has
 
 - Public pages: home and About CareSmile (mission, why choose us, contact details)
 - Register, log in, reset your password and verify your email (Laravel Breeze)
